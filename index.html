@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor Eterno nas Sombras</title>
+  <meta name="description" content="Uma declaração de amor gótico romântico com memórias e promessas eternas." />
+
+  <!-- Fontes (Google) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- FX de fundo -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="vignette"></div>
+    <div class="noise"></div>
+    <div class="mist mist-1"></div>
+    <div class="mist mist-2"></div>
+
+    <!-- “Velas” decorativas -->
+    <div class="candle candle-left">
+      <span class="glow"></span>
+      <span class="flame"></span>
+    </div>
+    <div class="candle candle-right">
+      <span class="glow"></span>
+      <span class="flame delay"></span>
+    </div>
+
+    <!-- Partículas (pétalas) - geradas via JS -->
+    <div id="petals"></div>
+  </div>
+
+  <!-- Header fixo com mini-logo -->
+  <header class="topmark">
+    <div class="mini-logo" title="Amor Eterno">
+      <span class="mini-heart"></span>
+      <span class="mini-text">AE</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="section hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <h1 class="title">
+          <span class="title-top reveal">Amor Eterno</span>
+          <span class="title-sub reveal delay-1">nas Sombras do Tempo</span>
+        </h1>
+
+        <p class="quote reveal delay-2">
+          "No silêncio da noite eterna, nosso amor brilha como a lua cheia,<br>
+          iluminando as trevas com a promessa de um sentimento que jamais se apaga."
+        </p>
+
+        <div class="divider reveal delay-3" aria-hidden="true">
+          <span class="line"></span>
+          <span class="heart"></span>
+          <span class="line"></span>
+        </div>
+
+        <a class="scroll-hint" href="#carta" aria-label="Descer">
+          <span class="chev"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section id="carta" class="section">
+      <div class="container">
+        <div class="card letter reveal">
+          <div class="card-corners" aria-hidden="true"></div>
+
+          <div class="card-head">
+            <h2 class="h2">Carta do Coração</h2>
+            <div class="mini-divider" aria-hidden="true">
+              <span></span><i></i><span></span>
+            </div>
+          </div>
+
+          <div class="letter-body">
+            <p><strong>Karine,</strong></p>
+
+<p>
+  Eu acordo e durmo pensando em você.<br>
+  Passo o dia inteiro com você na cabeça… parece doido, né? Mas é a verdade.
+</p>
+
+<p>
+  Você é doce, gentil e engraçada. E o seu estilo… é diferente de um jeito que só você consegue —
+  e combina completamente com você.
+</p>
+
+<p>
+  Eu preciso te pedir desculpa pelo que eu disse ontem. Eu não tinha o direito de falar aquilo.
+  Você tem total razão por estar brava comigo. Relembrar o passado dói, e eu sei que você sofreu demais
+  com isso… me perdoa, de verdade.
+</p>
+
+<p>
+  Eu vacilei de novo. E mesmo assim, o que eu mais quero agora é estar ao seu lado outra vez.
+  Eu tenho medo de ficar sem você — e isso é real.
+</p>
+
+<p>
+  Eu não quero te perder. Eu quero conquistar o seu perdão, com atitude, com cuidado e com respeito.
+  Eu vou lutar por isso.
+</p>
+
+<div class="signature">
+  Com amor, <strong>— Junior</strong>
+</div>
+
+          </div>
+
+          <button class="floating-heart" type="button" aria-label="Curtir">
+            ♥
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMÓRIAS -->
+    <section id="memorias" class="section">
+      <div class="container">
+        <div class="center reveal">
+          <h2 class="h2 big">Memórias Eternas</h2>
+          <p class="subtitle">Momentos capturados no tempo, guardados para sempre</p>
+        </div>
+
+        <div class="gallery reveal delay-1">
+          <div class="slides" id="slides">
+            <!-- Troque as imagens por suas fotos (coloca na pasta do projeto) -->
+            <article class="photo">
+              <div class="frame">
+                <img src="./assets/foto1.jpeg" alt="Nosso Primeiro Encontro na academia" onerror="this.src='https://images.unsplash.com/photo-1520975958225-1b3d28a6e0bb?auto=format&fit=crop&w=900&q=60'">
+              </div>
+              <p>Nosso Primeiro Encontro nas Sombras</p>
+            </article>
+
+            <article class="photo">
+              <div class="frame">
+                <img src="./assets/foto2.jpeg" alt="Onde tudo começou" onerror="this.src='https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=60'">
+              </div>
+              <p>Onde tudo começou</p>
+            </article>
+
+            <article class="photo">
+              <div class="frame">
+                <img src="./assets/foto3.jpeg" alt="Agora nós" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=60'">
+              </div>
+              <p>Agora nós</p>
+            </article>
+          </div>
+
+          <div class="dots" role="tablist" aria-label="Navegação das fotos">
+            <button class="dot active" data-go="0" aria-label="Ver foto 1"></button>
+            <button class="dot" data-go="1" aria-label="Ver foto 2"></button>
+            <button class="dot" data-go="2" aria-label="Ver foto 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRILHA -->
+    <section id="trilha" class="section">
+      <div class="container">
+        <div class="card music reveal">
+          <div class="music-badge" aria-hidden="true">♫</div>
+
+          <h2 class="h2">Trilha Sonora do Nosso Amor</h2>
+          <p class="subtitle">Deixe a melodia envolver sua alma enquanto revive nossa história</p>
+
+          <button id="btnPlay" class="play" type="button" aria-label="Tocar música">
+            <span class="pulse" aria-hidden="true"></span>
+            <span class="triangle" aria-hidden="true"></span>
+          </button>
+
+          <p class="tiny">Clique para ouvir nossa canção</p>
+
+          <!-- Troque por sua música: coloque em /assets/musica.mp3 -->
+          <audio id="audio" loop preload="none"
+            src="./assets/musica.mp3"
+          ></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- JURAMENTO -->
+    <section id="juramento" class="section oath">
+      <div class="container center reveal">
+        <h2 class="h2 giant">Juramento Eterno</h2>
+
+        <div class="divider" aria-hidden="true">
+          <span class="line"></span>
+          <span class="heart"></span>
+          <span class="line"></span>
+        </div>
+
+        <p class="oath-quote">
+          "Enquanto a lua brilhar nas trevas,<br>
+          enquanto as estrelas guardarem nossos segredos,<br>
+          meu amor por você permanecerá eterno."
+        </p>
+
+        <p class="oath-text">
+          Nas sombras do tempo, nosso amor é a única luz que nunca se apaga.<br>
+          Uma promessa selada com sangue, alma e eternidade.
+        </p>
+
+        <div class="stamp">
+          <p class="stamp-title">Para Sempre Seu</p>
+          <div class="mini-divider" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+          <p class="stamp-sub">Selado com amor eterno, nas trevas e na luz</p>
+          <span class="seal" aria-hidden="true">♥</span>
+        </div>
+
+        <a class="backtop" href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
